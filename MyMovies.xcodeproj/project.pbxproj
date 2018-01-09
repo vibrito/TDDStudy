@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D31098362005520900DA1BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31098352005520900DA1BF6 /* AppDelegate.swift */; };
-		D31098382005520900DA1BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31098372005520900DA1BF6 /* ViewController.swift */; };
 		D310983B2005520900DA1BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31098392005520900DA1BF6 /* Main.storyboard */; };
 		D310983D2005520900DA1BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310983C2005520900DA1BF6 /* Assets.xcassets */; };
 		D31098402005520900DA1BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310983E2005520900DA1BF6 /* LaunchScreen.storyboard */; };
-		D310984B2005520A00DA1BF6 /* MyMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310984A2005520A00DA1BF6 /* MyMoviesTests.swift */; };
+		D310984B2005520A00DA1BF6 /* MoviesTableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310984A2005520A00DA1BF6 /* MoviesTableViewControllerSpec.swift */; };
+		D31098562005526600DA1BF6 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31098552005526600DA1BF6 /* MoviesTableViewController.swift */; };
+		D3109859200553A200DA1BF6 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3109858200553A200DA1BF6 /* Genre.swift */; };
+		D310985C200553C700DA1BF6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310985B200553C700DA1BF6 /* Movie.swift */; };
+		D310985F2005540700DA1BF6 /* MoviesDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310985E2005540700DA1BF6 /* MoviesDataHelper.swift */; };
+		D310986B20055C7100DA1BF6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D310986920055C7100DA1BF6 /* Nimble.framework */; };
+		D310986C20055C7100DA1BF6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D310986A20055C7100DA1BF6 /* Quick.framework */; };
+		D310986D20055C8700DA1BF6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D310986920055C7100DA1BF6 /* Nimble.framework */; };
+		D310986E20055C8700DA1BF6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D310986A20055C7100DA1BF6 /* Quick.framework */; };
+		D310987020055CB500DA1BF6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D310986920055C7100DA1BF6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D310987120055CB500DA1BF6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D310986A20055C7100DA1BF6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D310987320055CC900DA1BF6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D310986920055C7100DA1BF6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D310987420055CC900DA1BF6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D310986A20055C7100DA1BF6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +36,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D310986F20055CA400DA1BF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D310987020055CB500DA1BF6 /* Nimble.framework in CopyFiles */,
+				D310987120055CB500DA1BF6 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D310987220055CC000DA1BF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D310987320055CC900DA1BF6 /* Nimble.framework in CopyFiles */,
+				D310987420055CC900DA1BF6 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D31098322005520900DA1BF6 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31098352005520900DA1BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D31098372005520900DA1BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D310983A2005520900DA1BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D310983C2005520900DA1BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D310983F2005520900DA1BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31098412005520900DA1BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D31098462005520A00DA1BF6 /* MyMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D310984A2005520A00DA1BF6 /* MyMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviesTests.swift; sourceTree = "<group>"; };
+		D310984A2005520A00DA1BF6 /* MoviesTableViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewControllerSpec.swift; sourceTree = "<group>"; };
 		D310984C2005520A00DA1BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31098552005526600DA1BF6 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		D3109858200553A200DA1BF6 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		D310985B200553C700DA1BF6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D310985E2005540700DA1BF6 /* MoviesDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataHelper.swift; sourceTree = "<group>"; };
+		D310986520055C2700DA1BF6 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
+		D310986720055C3500DA1BF6 /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
+		D310986920055C7100DA1BF6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		D310986A20055C7100DA1BF6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D310986B20055C7100DA1BF6 /* Nimble.framework in Frameworks */,
+				D310986C20055C7100DA1BF6 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D310986D20055C8700DA1BF6 /* Nimble.framework in Frameworks */,
+				D310986E20055C8700DA1BF6 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +109,7 @@
 				D31098342005520900DA1BF6 /* MyMovies */,
 				D31098492005520A00DA1BF6 /* MyMoviesTests */,
 				D31098332005520900DA1BF6 /* Products */,
+				D310986420055C2600DA1BF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				D31098352005520900DA1BF6 /* AppDelegate.swift */,
-				D31098372005520900DA1BF6 /* ViewController.swift */,
+				D31098552005526600DA1BF6 /* MoviesTableViewController.swift */,
+				D3109858200553A200DA1BF6 /* Genre.swift */,
+				D310985B200553C700DA1BF6 /* Movie.swift */,
+				D310985E2005540700DA1BF6 /* MoviesDataHelper.swift */,
 				D31098392005520900DA1BF6 /* Main.storyboard */,
 				D310983C2005520900DA1BF6 /* Assets.xcassets */,
 				D310983E2005520900DA1BF6 /* LaunchScreen.storyboard */,
@@ -90,10 +141,21 @@
 		D31098492005520A00DA1BF6 /* MyMoviesTests */ = {
 			isa = PBXGroup;
 			children = (
-				D310984A2005520A00DA1BF6 /* MyMoviesTests.swift */,
+				D310984A2005520A00DA1BF6 /* MoviesTableViewControllerSpec.swift */,
 				D310984C2005520A00DA1BF6 /* Info.plist */,
 			);
 			path = MyMoviesTests;
+			sourceTree = "<group>";
+		};
+		D310986420055C2600DA1BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D310986920055C7100DA1BF6 /* Nimble.framework */,
+				D310986A20055C7100DA1BF6 /* Quick.framework */,
+				D310986720055C3500DA1BF6 /* iOS */,
+				D310986520055C2700DA1BF6 /* Build */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +168,7 @@
 				D310982E2005520900DA1BF6 /* Sources */,
 				D310982F2005520900DA1BF6 /* Frameworks */,
 				D31098302005520900DA1BF6 /* Resources */,
+				D310986F20055CA400DA1BF6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -123,6 +186,7 @@
 				D31098422005520A00DA1BF6 /* Sources */,
 				D31098432005520A00DA1BF6 /* Frameworks */,
 				D31098442005520A00DA1BF6 /* Resources */,
+				D310987220055CC000DA1BF6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -199,7 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31098382005520900DA1BF6 /* ViewController.swift in Sources */,
+				D3109859200553A200DA1BF6 /* Genre.swift in Sources */,
+				D310985F2005540700DA1BF6 /* MoviesDataHelper.swift in Sources */,
+				D31098562005526600DA1BF6 /* MoviesTableViewController.swift in Sources */,
+				D310985C200553C700DA1BF6 /* Movie.swift in Sources */,
 				D31098362005520900DA1BF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D310984B2005520A00DA1BF6 /* MyMoviesTests.swift in Sources */,
+				D310984B2005520A00DA1BF6 /* MoviesTableViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vibrito.MyMovies;
@@ -370,6 +441,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vibrito.MyMovies;
@@ -386,6 +461,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyMoviesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vibrito.MyMoviesTests;
@@ -403,6 +482,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyMoviesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vibrito.MyMoviesTests;
