@@ -14,10 +14,24 @@ class MoviesTableViewController: UITableViewController
     {
         super.viewDidLoad()
     }
+    
+    var movies: [Movie]
+    {
+        return MoviesDataHelper.getMovies()
+    }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 0
+        return movies.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell")
+        let movie = movies[indexPath.row]
+        cell?.textLabel?.text = movie.title
+        cell?.detailTextLabel?.text = movie.genreString()
+        return cell!
     }
 }

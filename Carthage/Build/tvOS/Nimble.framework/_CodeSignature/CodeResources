@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Nimble.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		aFv9qhjuNvAfNDHmqLdWDSQVSMw=
+		54s7pZRPog6BL450g8BPgXLs8oY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aFv9qhjuNvAfNDHmqLdWDSQVSMw=
+			54s7pZRPog6BL450g8BPgXLs8oY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFz9RsghYYv5IUD6oiXLGLmaxxWopkzpDqqTixwhtcU=
+			0PlM1EQbk7X/a3oP58Pzgyfc1pKaHVXzYFsg++nRf1Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
